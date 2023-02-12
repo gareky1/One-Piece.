@@ -90,12 +90,13 @@ button:not(:disabled) {
 @media screen and (max-width:750px) {
     .container-text {
         position: relative;
-        top: 150px;
+        top: 50px;
         margin: 80px;
     }
 
     .container-p h6 {
         font-size: 15px !important;
+        width: 70vw;
     }
 }
 
