@@ -84,9 +84,7 @@ h6 {
         overflow: auto;
         width: 75vw;
     }
-    .navbar-toggler{
-        visibility: hidden;
-    }
+  
     .navbar{
         margin-top: -55px;
     }
