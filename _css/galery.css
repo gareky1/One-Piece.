@@ -1,0 +1,179 @@
+.background {
+    display: flex;
+    height: 100vh;
+    background-image: url(/_imagens/background/background-3.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.galery {
+    display: flex;
+    margin: 140px 0 0 90px;
+}
+
+
+@media screen and (max-width:950px) {
+    .galery {
+        display: flex;
+        margin: 140px 0 0 20px;
+        align-items: center;
+        width: 90vw;
+        height: 75vh;
+        overflow: hidden;
+    }
+
+    li {
+        padding-left: 20px;
+    }
+
+    ul#album-fotos {
+        width: 27vw !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .galery {
+        display: flex;
+        width: 90vw;
+        height: 75vh;
+        flex-direction: column;
+        overflow: auto;
+        margin: 200px 0 0 00px;
+    }
+
+    ul#album-fotos {
+        width: 50vw !important;
+    }
+}
+
+ul#album-fotos {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    width: 20vw;
+    margin-left: 10px;
+}
+
+ul#album-fotos li {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 13pt;
+    line-height: 350px;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01 {
+    background: url('../_imagens/ilhas/Weatheria.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto02 {
+    background: url('../_imagens/ilhas/Ohara.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03 {
+    background: url('../_imagens/ilhas/Marineford.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04 {
+    background: url('../_imagens/ilhas/IlhaMomoiro.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05 {
+    background: url('../_imagens/ilhas/Thriller\ Bark.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06 {
+    background: url('../_imagens/ilhas/EniesLobby.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto07 {
+    background: url('../_imagens/ilhas/Rusukaina.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto08 {
+    background: url('../_imagens/ilhas/Alabasta.jpg');
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul#album-fotos li#foto08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}

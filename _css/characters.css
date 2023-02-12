@@ -1,0 +1,143 @@
+.background {
+    display: flex;
+    height: 100vh;
+    background-image: url(/_imagens/background/background-2.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerC {
+    margin: 140px 0 0 90px;
+}
+
+.lbox {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 0;
+    opacity: 1;
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.min {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 25px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.min:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.lbox:target {
+    opacity: 1;
+    visibility: visible;
+    width: 80vw;
+    height: 70vh;
+    margin: 90px 0 0 90px;
+    background: rgba(10, 10, 10, .7);
+    position: fixed;
+}
+
+h6 {
+    font-size: 1rem !important;
+}
+
+@media screen and (max-width:950px) {
+    .lbox:target {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+
+    .box_text h6 {
+        position: relative;
+        top: -75px;
+        padding: 3vw 5vw 5vw 5vw !important;
+        text-align: justify;
+    }
+
+    .lbox:target {
+        height: 80vh;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .containerC {
+        margin-top: 200px;
+        overflow: auto;
+        width: 75vw;
+    }
+    .navbar-toggler{
+        visibility: hidden;
+    }
+    .navbar{
+        margin-top: -55px;
+    }
+}
+
+.btn-box {
+    color: #FFF;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#prevs {
+    left: -5%;
+    top: 45%;
+}
+
+#nexts {
+    right: -5%;
+    top: 45%;
+}
+
+#close-box {
+    top: 0;
+    right: 2%;
+}
+
+.box_img img {
+    opacity: 0;
+}
+
+.lbox:target .box_img img {
+    opacity: 1;
+    transition: opacity .4s linear;
+
+}
+
+.box_img img {
+    margin: 50px 20px 20px 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.box_text h6 {
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5vw 3vw 5vw 0vw;
+    text-align: justify;
+}
